@@ -1,0 +1,29 @@
+git init 			//инициализация git
+git config --global user.name "Your name"
+git config --global user.email "Your email"
+git status
+
+			.gitignore //файл в корневом каталоге проекта
+				.idea/*
+				*.class
+				*.jar
+				*.war
+				*.ear
+
+git add -all			//добавление файлов в git
+git commit -m "Your comment"
+git branch NameBranch		//создание ветки
+git switch NameBranch		//переключение ветки
+git merge NameBranch		//объединение ветки
+git branch -d NameBranch 	//удаление ветки
+
+git remote add nameRemote https://github/YourRepository		//подключение удаленного репозитория
+
+git push nameRemote master	//загрузка кода на удаленный репозиторий
+
+===================================================
+Изменяем проект на github
+
+git pull nameRemote master	//выгрузка кода с удаленного репозитория на локальный ПК
+
+git remote remove nameRemote //удаление подключения удаленного репозитория
